@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/form.css">
+  <title>A Form</title>
+</head>
+
+<body>
+  <div id="form-group">
+    <form action="process.php">
+      <div class="label-top">
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id="firstname" value="Your first name">
+      </div>
+      <div class="label-top">
+        <label for="surname">Surname: </label>
+        <input type="text" name="surname" id="surname" value="Your last name">
+      </div>
+      <div class="label-top">
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="me@gmail.com">
+      </div>
+      <div class="label-top">
+        <label for="message">Message: </label>
+        <textarea name="message" id="" cols="50" rows="5"></textarea>
+      </div>
+      <div class="label-top">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+      </div>
+      <div class="label-top">
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="bithdate">
+      </div>
+      <div class="label-top">
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <div class="label-top">
+        <label for="origin">State Of Origin</label>
+        <input type="radio" name="origin" id="origin" value="Osun" checked>Osun
+        <input type="radio" name="origin" id="origin" value="Oyo">Oyo
+        <input type="radio" name="origin" id="origin" value="Ogun">Ogun
+      </div>
+      <div class="label-top">
+        <label for="exam-center">Examination Center</label>
+        <input type="checkbox" name="exam-center" id="exam-center" value="Osogbo">Osogbo
+        <input type="checkbox" name="exam-center" id="exam-center" value="ibadan" checked>Ibadan
+        <input type="checkbox" name="exam-center" id="exam-center" value="abeokuta">Abeokuta
+        <input type="checkbox" name="exam-center" id="exam-center" value="ikeja">Ikeja
+      </div>
+      <button type="submit">Submit</button>
+      <p class="bottom-text">
+        By clicking the Sign Up button, you agree to our
+        <a href="#">Terms & Conditions</a> and
+        <a href="#">Privacy Policy</a>
+      </p>
+    </form>
+  </div>
+  <div>
+    <footer>
+      <p>Already have an account? <a href="#">Login Here</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
